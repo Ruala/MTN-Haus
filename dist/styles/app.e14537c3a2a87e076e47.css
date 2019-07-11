@@ -11789,6 +11789,50 @@ body {
 .color-fourth {
   background-color: #6c6c6c;
 }
+.logo-wrapper {
+  position: relative;
+  width: 90px;
+  height: 80px;
+}
+.logo-image_small {
+  display: none;
+}
+.uk-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90px;
+  height: 123px;
+  margin-left: -3px;
+  margin-right: -3px;
+  background-color: #093251;
+  transition: height 0.3s linear;
+}
+.uk-logo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  width: 3000px;
+  background-color: #093251;
+}
+.uk-logo img {
+  position: absolute;
+  top: 16px;
+  left: 15px;
+}
+.uk-navbar-sticky .uk-logo {
+  width: 84px;
+  height: 80px;
+  margin: 0;
+}
+.uk-navbar-sticky .logo-image_small {
+  display: block;
+}
+.uk-navbar-sticky .logo-image_big {
+  display: none;
+}
 .tm-background-dots {
   position: absolute;
   top: 40px;

@@ -22,6 +22,71 @@ body {
   background-color: #6c6c6c;
 }
 
+.logo-wrapper {
+  position: relative;
+  width: 90px;
+  height: 80px;
+}
+
+.logo-image {
+
+  &_small {
+    display: none;
+  }
+
+  &_big {
+
+  }
+}
+
+.uk-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90px;
+  height: 123px;
+  margin-left: -3px;
+  margin-right: -3px;
+  background-color: @global-primary-background;
+  transition: height 0.3s linear;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    width: 3000px;
+    background-color: @global-primary-background;
+  }
+
+  img {
+    position: absolute;
+    top: 16px;
+    left: 15px;
+  }
+}
+
+.uk-navbar-sticky {
+
+  .uk-logo {
+    width: 84px;
+    height: 80px;
+    margin: 0;
+  }
+
+  .logo-image {
+
+    &_small {
+      display: block;
+    }
+
+    &_big {
+      display: none;
+    }
+  }
+}
+
 .tm-background-dots {
   position: absolute;
   top: 40px;
