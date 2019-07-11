@@ -14,7 +14,7 @@
 @navbar-nav-item-padding-horizontal:            15px;
 @navbar-nav-item-color:                         @global-muted-color;
 @navbar-nav-item-font-size:                     14px;
-@navbar-nav-item-font-family:                   'Roboto', @global-font-family;
+@navbar-nav-item-font-family:                   @global-font-family;
 @navbar-nav-item-hover-color:                   @global-color;
 @navbar-nav-item-onclick-color:                 @global-emphasis-color;
 @navbar-nav-item-active-color:                  @global-emphasis-color;
@@ -88,6 +88,7 @@
     text-transform: @navbar-nav-item-text-transform;
     transition: 0.1s ease-in-out;
     transition-property: color, background-color;
+    letter-spacing: 0.18em;
 
     span {
         display: block;
