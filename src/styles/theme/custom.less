@@ -26,6 +26,14 @@ p {
   background-color: #6c6c6c;
 }
 
+.technology-background {
+  background-color: #f9f9f9;
+}
+
+.text-secondary {
+  color: @global-secondary-background;
+}
+
 .logo-wrapper {
   position: relative;
   width: 90px;
@@ -92,6 +100,15 @@ p {
   }
 }
 
+.tm-text-second-type {
+  font-size: 30px;
+  color: #656b6f;
+
+  .uk-light & {
+    color: #fff;
+  }
+}
+
 .tm-background-dots {
   position: absolute;
   top: 40px;
@@ -128,8 +145,45 @@ p {
   }
 }
 
+.tm-pageheader__box {
+  max-width: 1200px;
+  padding: 100px;
+  margin-bottom: -180px;
+  font-size: 20px;
+  color: #656b6f;
+  background-color: #fff;
+
+  h4 {
+    color: #005678;
+  }
+
+  .uk-container > & {
+    margin-bottom: -180px;
+  }
+}
+
+.tm-about {
+  color: #656b6f;
+
+  h4 {
+    color: #005678;
+  }
+
+  &__box {
+    padding: 200px 40px;
+    font-size: 20px;
+  }
+}
 
 @media (max-width: 959px) {
+
+  h3, .h3 {
+    font-size: 46px;
+  }
+
+  h4, .h4 {
+    font-size: 42px;
+  }
 
   .tm-pageheader {
 
