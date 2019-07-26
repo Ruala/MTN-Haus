@@ -101,7 +101,6 @@ p {
 }
 
 .tm-text-second-type {
-  font-size: 30px;
   color: #656b6f;
 
   .uk-light & {
@@ -147,18 +146,13 @@ p {
 
 .tm-pageheader__box {
   max-width: 1200px;
-  padding: 100px;
-  margin-bottom: -180px;
+  padding: 50px 20px;
   font-size: 20px;
   color: #656b6f;
   background-color: #fff;
 
   h4 {
     color: #005678;
-  }
-
-  .uk-container > & {
-    margin-bottom: -180px;
   }
 }
 
@@ -170,7 +164,7 @@ p {
   }
 
   &__box {
-    padding: 200px 40px;
+    padding: 40px 20px;
     font-size: 20px;
   }
 }
@@ -182,7 +176,7 @@ p {
   }
 
   h4, .h4 {
-    font-size: 42px;
+    font-size: 40px;
   }
 
   .tm-pageheader {
@@ -205,6 +199,17 @@ p {
 }
 
 
+@media (min-width: 960px){
+
+  .tm-pageheader__box {
+    padding: 100px;
+    margin-bottom: -80px;
+
+    .uk-container > & {
+      margin-bottom: -80px;
+    }
+  }
+}
 
 @media (min-width: 1200px) {
 
@@ -213,6 +218,29 @@ p {
 
     > * {
       padding-left: 50px;
+    }
+  }
+
+  .tm-text-second-type {
+    font-size: 30px;
+  }
+
+  .tm-pageheader__box {
+    margin-bottom: -180px;
+
+    .uk-container > & {
+      margin-bottom: -180px;
+    }
+  }
+
+  .tm-about {
+
+    h4 {
+      margin-bottom: 40px;
+    }
+
+    &__box {
+      padding: 200px 40px;
     }
   }
 }
