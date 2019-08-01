@@ -45,6 +45,11 @@ module.exports = {
             filename: "technology.html",
             inject: "body",
         }),
+        new HtmlWebpackPlugin({
+            template: Path.resolve(__dirname, '../src/web-review.html'),
+            filename: "web-review.html",
+            inject: "body",
+        }),
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery'
