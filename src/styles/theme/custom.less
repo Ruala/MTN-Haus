@@ -100,6 +100,24 @@ p {
   }
 }
 
+.uk-light {
+
+  .text-secondary {
+    color: @global-secondary-background;
+
+    &.uk-subnav > * > {
+
+      :first-child {
+        color: @global-secondary-background;
+      }
+
+      a:hover, a:focus {
+        color: darken(@global-secondary-background, 10%);
+      }
+    }
+  }
+}
+
 .tm-text-second-type {
   color: #656b6f;
 
@@ -266,5 +284,12 @@ p {
     &__box {
       padding: 200px 40px;
     }
+  }
+}
+
+@media (pointer: coarse) {
+
+  .uk-background-fixed {
+    background-attachment: fixed;
   }
 }
