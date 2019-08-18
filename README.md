@@ -1,7 +1,7 @@
-# webpack-uikit
+# MTN HAUS
 
 features:
-- 3.0.0-rc.10
+- uikit v 3.0.0-rc.10
 - less
 - es7, stage-0
 - jquery v3.3.1 (global variable $, import not needed)
